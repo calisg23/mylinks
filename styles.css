@@ -36,13 +36,13 @@ body {
 
 /* --- NOMBRE --- */
 .name {
-  font-size: 28px;
+  font-size: 1rem;
   margin-top: 16px;
 }
 
 /* --- BIO --- */
 .bio {
-  font-size: 15px;
+  font-size: 0.8rem;
   color: #a0a0b0;
   margin-top: 8px;
 }
@@ -55,10 +55,55 @@ body {
 /* --- CADA ENLACE --- */
 .link {
   display: block;
-  padding: 14px;
+  padding: 0.8rem;
   margin-top: 12px;
   border: 1px solid #2a2a38;
   color: #ffffff;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 0.8rem;
+}
+
+.link:hover{
+  background-color:black;
+}
+/*@media (max-width: 768px){
+  .name{
+    font-size: 1rem;
+  }
+  .link{
+    font-size: 0.8rem;
+  }
+  .bio{
+    font-size: 0.8rem;
+  }
+}*/
+
+
+@media (min-width: 375px){
+  .name{
+    font-size: 2rem;
+  }
+  .bio{
+    font-size: 1rem;
+  }
+  .link{
+    font-size: 1rem;
+    padding: 1rem;
+  }
+  .link:hover{
+    background-color: #2a2a38;
+  }
+    
+}
+
+@media (min-width: 1024px){
+  .name{
+    font-size: 4rem;
+  }
+  .link{
+    font-size: 0.8rem;
+  }
+  .bio{
+    font-size: 0.8rem;
+  }
 }
